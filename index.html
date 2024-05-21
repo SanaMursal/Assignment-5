@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>form</title>
+</head>
+<body>
+        <div class="container">
+            <header>
+                <h1>App Survey form</h1>
+                <p>Thankyou for your feedback!</p>
+            </header>
+            <main>
+                <form action="confirmation.html" method="GET">
+                    <div class="Finline">
+                        <div>
+                        <label for="name-input">Name</label>
+                        <input id="name-input" type="text" name="name" />
+                    </div>
+    
+                    <div>
+                        <label for="email-input">Email</label>
+                        <input id="email-input" type="email" name="email"/>
+                    </div>
+    
+                    <div>
+                        <label for="age-input">Age</label>
+                        <input id="age-input" type="number" name="age">
+                    </div>
+                </div>
+                    <div class="rec">
+                        <label>Would you recommend APP to friend?</label>
+                        <br>
+                        <input id="app-definitly" type="radio" name="app" value="app-definitly">
+                        <label class="inline-label" for="app-definitly">Definitly</label>
+    
+                        <input id="maybe-app" type="radio" name="app" value="maybe-app">
+                        <label class="inline-label" for="maybe-app">Maybe</label>
+    
+                        <input id="app-notSure" type="radio" name="app" value="app-notSure">
+                        <label class="inline-label" for="app-notSure">Not sure</label>
+                    </div>
+                    <div class="level">
+                        <label for="edu">What is your level of education?</label>
+                        <br>
+                        <select id="edu">
+                            <option name="edu" value="">Select One</option>
+                            <option name="edu" value="bachelore">Bachelore</option>
+                            <option name="edu" value="master">Master</option>
+                            <option name="edu" value="phd">PHD</option>
+                        </select>
+                    </div>
+                    <div class="choose">
+                        <label>What would you like to see improved?</label>
+                        <br>
+
+                        <input id="lec" type="checkbox" name="add-choice" value="lec" />
+                        <label class="inline-label" for="lec">Lectures</label>
+
+                        <input id="labs" type="checkbox" name="add-choice" value="labs">
+                        <label class="inline-label" for="labs">Labs</label>
+
+                        <input id="assignment" type="checkbox" name="add-choice" value="assignment">
+                        <label class="inline-label" for="assignment">Assignment</label>
+
+                        <input id="comunity" type="checkbox" name="add-choice" value="community">
+                        <label class="inline-label" for="community">Community</label>
+                    </div>
+
+                    <div class="comment">
+                        <label for="comment">comments</label>
+                        <br>
+                        <textarea id="comment" name="comment"></textarea>
+                    </div>
+                    <div class="btns">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+    
+                </form>
+            </main>
+        </div>
+       
+    </body>
+</html>
